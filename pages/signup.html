@@ -25,11 +25,11 @@
 <h1>
   Join The Hackathon Now!
 </h1>
-<h5>
+<h3>
   Assemble your team, push your limits, and build the future of the web in 48 hours.
-</h5>
+</h3>
 
-<form>
+<form action="/submit" method="post">
   <label for="team">Team name:</label>
   <input type="text" id="team" name="team" required />
 
@@ -61,6 +61,8 @@
 
   <label for="team-question">Why do you think your team should participate in the hackathon?</label>
   <textarea id="team-question" name="team-question" rows="4" cols="50" required></textarea>
+
+  <button type="submit">Submit</button>
 
 </form>
 
