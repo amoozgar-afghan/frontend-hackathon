@@ -46,3 +46,16 @@ This is the main stylesheet for the website. It contains all the common styles b
     border-radius: 5px;
     cursor: pointer;
 }
+
+.Form-Area {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+.form-container {
+ background-color: rgba(36, 36, 184, 0.3); /* Low opacity blue */
+  backdrop-filter: blur(10px);             /* Blurs what's behind the div */
+  -webkit-backdrop-filter: blur(10px);    /* For Safari support */
+}
