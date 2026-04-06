@@ -51,11 +51,26 @@ This is the main stylesheet for the website. It contains all the common styles b
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 400px;
+    max-width: 800px;
     margin: 20px auto;
 }
 .form-container {
  background-color: rgba(36, 36, 184, 0.3); /* Low opacity blue */
   backdrop-filter: blur(10px);             /* Blurs what's behind the div */
   -webkit-backdrop-filter: blur(10px);    /* For Safari support */
+}
+
+.Information-fill {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 15px;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Makes all fields in a row equal width */
+    gap: 5px;
 }
