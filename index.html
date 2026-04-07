@@ -4,9 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HomePage</title>
+
+  <!-- Fontawsome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- stylesheet link -->
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
+  <!-- Header and Navigation Start -->
   <header>
     <nav class="navbar">
       <a class="nav-logo" href="index.html">FRONTEND HACKATHON</a>
@@ -16,12 +22,28 @@
         <li class="nav-item"><a href="./pages/schedule.html">SCHEDULE</a></li>
         <li class="nav-item"><a href="./pages/contact.html">CONTACT</a></li>
       </ul>
-      <a href="./pages/signup.html"><button class="nav-button">SIGN UP</button></a>
+      <a href="./pages/signup.html"><button class="btn nav-button">SIGN UP</button></a>
     </nav>
   </header>
+  <!-- Header and Navigation End -->
   <main>
-    <!-- Main content goes here -->
-     <h1>Home page</h1>
+    <!-- Hero Section Start -->
+    <section class="hero">
+      <div class="hero-wrapper">
+        <div class="hero-content">
+          <h1 class="hero-title">Welcome to the Frontend Hackathon!</h1>
+          <p class="hero-description">Code your ideas to life at the premier frontend event of the year. Join 500+ developers for 48 hours of intense creation, learning, and architectural innovation.</p>
+          <div class="hero-button-container">
+            <a href="./pages/signup.html"><button class="btn btn-lg">Sign up</button></a>
+            <a href="./pages/schedule.html"><button class="btn btn-lg btn-secondary">Learn More</button></a>
+          </div>
+        </div>
+        <figure class="hero-visual">
+          <img src="./images/hackathon-1.jpg" alt="This image shows a group of young adults focused on laptops and taking notes in a collaborative workshop or hackathon setting." />
+        </figure>
+      </div>
+    </section>
+    <!-- Hero Section End -->
   </main>
   <footer>
   </footer>

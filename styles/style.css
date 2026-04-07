@@ -4,11 +4,69 @@ This is the main stylesheet for the website. It contains all the common styles b
 
 */
 
+/* ======================================================================================
+Fots
+========================================================================================= */
+
+@font-face {
+  font-family: 'Roboto'; /* Give your font a name */
+  src: url('./../fonts/Roboto-Regular.ttf') format('truetype'); /* Modern & fastest */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Shows fallback font until custom font loads */
+}
+
+@font-face {
+  font-family: 'Roboto'; /* Give your font a name */
+  src: url('./../fonts/Roboto-Bold.ttf') format('truetype'); /* Modern & fastest */
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; /* Shows fallback font until custom font loads */
+}
+
+@font-face {
+  font-family: 'Roboto'; /* Give your font a name */
+  src: url('./../fonts/Roboto-ExtraBold.ttf') format('truetype'); /* Modern & fastest */
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; /* Shows fallback font until custom font loads */
+}
+
+@font-face {
+  font-family: 'Roboto'; /* Give your font a name */
+  src: url('./../fonts/Roboto-Light.ttf') format('truetype'); /* Modern & fastest */
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; /* Shows fallback font until custom font loads */
+}
+
+@font-face {
+  font-family: 'Roboto'; /* Give your font a name */
+  src: url('./../fonts/Roboto-LightItalic.ttf') format('truetype'); /* Modern & fastest */
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap; /* Shows fallback font until custom font loads */
+}
+
+/* ======================================================================================
+Fonts End
+========================================================================================= */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F9FAF8;
+    color: #1F2937;
+}
+
+/* ======================================================================================
+Navigation Bar Styles 
+========================================================================================= */
 
 .navbar {
     display: flex;
@@ -39,13 +97,52 @@ This is the main stylesheet for the website. It contains all the common styles b
 
 .navbar .nav-button {
     margin-left: 10px;
-    padding: 10px 20px;
-    border: none;
-    color: #F9FAF8;
-    background-color: #3B82F6;
-    border-radius: 5px;
-    cursor: pointer;
 }
+
+/* ======================================================================================
+Navigation Bar Styles End 
+========================================================================================= */
+
+/* ======================================================================================
+Hero Section Styles
+========================================================================================= */
+
+.hero {
+    padding: 80px 20px;
+    background-color: #1F2937;
+    color: #fff;
+}
+
+.hero-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.hero-content {
+    padding-right: 50px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-visual img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ======================================================================================
+Hero Section Styles End
+========================================================================================= */
 
 .Form-Area {
     display: flex;
@@ -80,3 +177,37 @@ This is the main stylesheet for the website. It contains all the common styles b
     height: 100px;
     margin: 20px auto;
 }
+
+/* ======================================================================================
+Utility Classes
+========================================================================================= */
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    color: #F9FAF8;
+    background-color: #3882F6;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-lg {
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+.btn-primary {
+    background-color: #3882F6;
+    color: #F9FAF8;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid #F9FAF8;
+    color: #F9FAF8;
+}
+
+/* ======================================================================================
+Utility Classes End
+========================================================================================= */
