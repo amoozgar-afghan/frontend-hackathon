@@ -193,6 +193,48 @@ Features Section Styles
 Features Section Styles End
 ========================================================================================= */
 
+/* ======================================================================================
+Testimonials Section Styles
+========================================================================================= */
+
+.testimonials {
+    background-color: #E5E7EB;
+}
+
+.testimonial{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: rgba(31, 41, 55, 1); /* #1F2937 with 100% opacity */
+}
+
+.testimonial span {
+    color: rgba(31, 41, 55, 0.1);
+}
+
+.testimonial p {
+    line-height: 1.5;
+}
+
+.testimonial p, .testimonial figcaption {
+    padding-left: 40px;
+}
+
+.testimonial figcaption {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* ======================================================================================
+Testimonials Section Styles End
+========================================================================================= */
+
+
+
 .Form-Area {
     display: flex;
     flex-direction: column;
