@@ -233,6 +233,41 @@ Testimonials Section Styles
 Testimonials Section Styles End
 ========================================================================================= */
 
+/* ======================================================================================
+Call to Action Section Styles
+========================================================================================= */
+
+.action {
+    padding: 80px 20px;
+}
+
+.action-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    border-radius: 20px;
+    padding: 40px 20vw;
+    text-align: center;
+}
+
+.action-title {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.action-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #b1b7c2;
+    line-height: 1.5;
+}
+
+
+/* ======================================================================================
+Call to Action Section Styles End
+========================================================================================= */
 
 
 .Form-Area {
