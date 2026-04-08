@@ -199,13 +199,30 @@ Features Section Styles End
     gap: 15px;
     max-width: 800px;
     margin: 20px auto;
+    color: #F9FAF8;
 }
 
 .form-container {
- background-color: rgba(36, 36, 184, 0.3);
-  backdrop-filter: blur(10px);            
-  -webkit-backdrop-filter: blur(10px);   
+ background-color: #1F2937;
 }
+
+.Join {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 60px 80px;
+}
+
+.Join h1 {
+font-size: 48px;
+font-weight: 800;
+}
+
+.Join h3 {
+font-size: 18px;
+font-weight: 300;
+color: #E5E7EB;
+}
+
 
 .quote-text {
   font-size: 36px;
@@ -214,7 +231,12 @@ Features Section Styles End
   color: #1F2937;
   line-height: 1.4;
 }
-
+.quote-img {
+  width: 150px;       
+  height: 150px;
+  object-fit: contain;
+  flex-shrink: 0; /*  leave this at 0 so the text wraps down (❁´◡`❁)*/
+}
 .Information-fill {
     display: flex;
     flex-direction: row;
@@ -236,6 +258,11 @@ Features Section Styles End
     margin: 20px auto;
 }
 
+.quote-block {
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+}
 /* ======================================================================================
 Utility Classes
 ========================================================================================= */
