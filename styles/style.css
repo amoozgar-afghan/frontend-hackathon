@@ -204,6 +204,7 @@ Features Section Styles End
 
 .form-container {
  background-color: #1F2937;
+ padding: 60px 80px;
 }
 
 .Join {
@@ -215,12 +216,16 @@ Features Section Styles End
 .Join h1 {
 font-size: 48px;
 font-weight: 800;
+ margin-bottom: 16px;
+
 }
 
 .Join h3 {
 font-size: 18px;
 font-weight: 300;
 color: #E5E7EB;
+ margin-bottom: 16px;
+
 }
 
 
