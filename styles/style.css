@@ -204,12 +204,13 @@ Features Section Styles End
 
 .form-container {
  background-color: #1F2937;
- padding: 60px 80px;
+ padding: 50px 20px;
 }
 
 .Form-Area label {
     font-size: 14px;
     color: #E5E7EB;
+    text-align: center;
 }
 
 .Form-Area input, .Form-Area textarea {
@@ -224,7 +225,8 @@ Features Section Styles End
 .Join {
     background-color: #1F2937;
     color: #F9FAF8;
-    padding: 60px 80px;
+    padding: 40px 40px;
+    text-align: center;
 }
 
 .Join h1 {
@@ -238,17 +240,18 @@ font-weight: 800;
 font-size: 18px;
 font-weight: 300;
 color: #E5E7EB;
- margin-bottom: 16px;
-
+margin-bottom: 16px;
 }
 
 
 .quote-text {
-  font-size: 36px;
-  font-weight: 300;  
-  font-style: italic;
-  color: #1F2937;
-  line-height: 1.4;
+   font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+    line-height: 1.6;
+    
+   /*  dont add justify, it looks kinda weird on small screans*/
 }
 .quote-img {
   width: 150px;       
@@ -281,6 +284,7 @@ color: #E5E7EB;
     display:flex;
     align-items: center;
     gap: 1rem;
+    padding: 60px 80px;
 }
 /* ======================================================================================
 Utility Classes
