@@ -207,6 +207,20 @@ Features Section Styles End
  padding: 60px 80px;
 }
 
+.Form-Area label {
+    font-size: 14px;
+    color: #E5E7EB;
+}
+
+.Form-Area input, .Form-Area textarea {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #3882F6;
+    background-color: #2D3748;
+    color: #F9FAF8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
 .Join {
     background-color: #1F2937;
     color: #F9FAF8;
