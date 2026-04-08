@@ -200,10 +200,19 @@ Features Section Styles End
     max-width: 800px;
     margin: 20px auto;
 }
+
 .form-container {
  background-color: rgba(36, 36, 184, 0.3);
   backdrop-filter: blur(10px);            
   -webkit-backdrop-filter: blur(10px);   
+}
+
+.quote-text {
+  font-size: 36px;
+  font-weight: 300;  
+  font-style: italic;
+  color: #1F2937;
+  line-height: 1.4;
 }
 
 .Information-fill {
