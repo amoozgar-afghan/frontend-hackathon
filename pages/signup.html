@@ -1,118 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sign Up Form</title>
-  <link rel="stylesheet" href="./../styles/style.css" />
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <a class="nav-logo" href="./../index.html">FRONTEND HACKATHON</a>
-      <ul class="nav-links">
-        <li class="nav-item"><a href="./../index.html">HOME</a></li>
-        <li class="nav-item"><a href="./award.html">AWARD</a></li>
-        <li class="nav-item"><a href="./schedule.html">SCHEDULE</a></li>
-        <li class="nav-item"><a href="./contact.html">CONTACT</a></li>
-      </ul>
-      <a href="./signup.html"><button class="btn nav-button">SIGN UP</button></a>
-    </nav>
-  </header>
-  <main>
-  
-<div class="Join">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./../styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="nav-logo" href="./../index.html">FRONTEND HACKATHON</a>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="./../index.html">HOME</a></li>
+          <li class="nav-item"><a href="./award.html">AWARD</a></li>
+          <li class="nav-item"><a href="./schedule.html">SCHEDULE</a></li>
+          <li class="nav-item"><a href="./contact.html">CONTACT</a></li>
+        </ul>
+        <a href="./signup.html"><button class="btn nav-button">SIGN UP</button></a>
+      </nav>
+    </header>
+    <main>
 
-<h1>
-  Join The Hackathon Now!
-</h1>
-
-<h3>
-  Assemble your team, push your limits, and build the future of the web in 48 hours.
-</h3>
-
-</div>
-
-<div class="form-container">
-  
-<form action="/submit" method="post" class="Form-Area">
-  <label for="team">Team name:</label>
-  <input type="text" id="team" name="team" required />
-<div class="Information-fill">
-  <div class="input-group">
-  <label for="first-name">First Team Member Name:</label>
-  <input type="text" id="first-name" name="first-name" required />
-
-  <label for="first-teammember">First Team Member Email:</label>
-  <input type="email" id="first-teammember" name="first-teammember" required />
-
-  <label for="github">First Team Member Github Username:</label>
-  <input type="text" id="github" name="github" required />
-  </div>
-  
-  <div class="input-group">
-
-  <label for="second-name">Second Team Member Name:</label>
-  <input type="text" id="second-name" name="second-name" />
-
-  <label for="second-teammember">Second Team Member Email:</label>
-  <input type="email" id="second-teammember" name="second-teammember" />
-
-  <label for="github2">Second Team Member Github Username:</label>
-  <input type="text" id="github2" name="github2" />
-</div>
-
-<div class="input-group">
-  <label for="third-name">Third Team Member Name:</label>
-  <input type="text" id="third-name" name="third-name" />
-
-  <label for="third-teammember">Third Team Member Email:</label>
-  <input type="email" id="third-teammember" name="third-teammember" /> 
-
-  <label for="github3">Third Team Member Github Username:</label>
-  <input type="text" id="github3" name="github3" />
-</div>
-</div>
-  <label for="team-question">Why do you think your team should participate in the hackathon?</label>
-  <textarea id="team-question" name="team-question" rows="4" cols="50" required></textarea>
-
-  <button type="submit" class="btn">Submit</button>
-
-</form>
-</div>
-
-
-<!-- in case youre woundering why i am wrapping the Quotes section in a figure, tbh idk myself but thats what i googled and found to be a good practice ^_^ --> 
-<figure class="quote-block" > 
-
-<blockquote class="quote-text">
-  "The best way to predict the future is to build it. Join a community of innovators, creators, and problem-solvers at our hackathon.
-  Whether you're a seasoned developer or just starting out, this is your chance to turn ideas into reality and shape the future of technology"
-  <br>
-   - Hackathon Committee 2025
-</blockquote>
-<img src="../Images/coding-icon.png " alt="Coding Icon" class="quote-img" />
-
-</figure>
-
-
-  </main>
-  <footer>
-    <div class="copyright">
-      <a href="index.html" class="footer-logo">Frontend Hackathon</a>
-      <p class="footer-text">© 2026 Frontend Hackathon. All rights reserved.</p>
-    </div>
-    <div class="footer-links">
-      <a href="./pages/contact.html">Contact with us</a>
-      <a href="https://twitter.com" target="_blank">Twitter</a>
-      <a href="https://github.com" target="_blank">GitHub</a>
-      <a href="https://discord.com" target="_blank">Discord</a>
-      <div class="legal-links">
-        <a href="./pages/privacy.html">Privacy Policy</a>
-        <a href="./pages/terms.html">Terms of Service</a>
+      <div class="Join">
+        <h1>
+          Join The Hackathon Now!
+        </h1>
+        <h3>
+          Assemble your team, push your limits, and build the future of the web in 48 hours.
+        </h3>
       </div>
-    </div>
-  </footer>
 
-</body>
+      <div class="form-container">
+        <form action="/submit" method="post" class="Form-Area">
+          <label for="team">Team name:</label>
+          <input type="text" id="team" name="team" required />
+
+          <div class="Information-fill">
+            <div class="input-group">
+              <label for="first-name">First Team Member Name:</label>
+              <input type="text" id="first-name" name="first-name" required />
+
+              <label for="first-teammember">First Team Member Email:</label>
+              <input type="email" id="first-teammember" name="first-teammember" required />
+
+              <label for="github">First Team Member Github Username:</label>
+              <input type="text" id="github" name="github" required />
+            </div>
+
+            <div class="input-group">
+              <label for="second-name">Second Team Member Name:</label>
+              <input type="text" id="second-name" name="second-name" />
+
+              <label for="second-teammember">Second Team Member Email:</label>
+              <input type="email" id="second-teammember" name="second-teammember" />
+
+              <label for="github2">Second Team Member Github Username:</label>
+              <input type="text" id="github2" name="github2" />
+            </div>
+
+            <div class="input-group">
+              <label for="third-name">Third Team Member Name:</label>
+              <input type="text" id="third-name" name="third-name" />
+
+              <label for="third-teammember">Third Team Member Email:</label>
+              <input type="email" id="third-teammember" name="third-teammember" />
+
+              <label for="github3">Third Team Member Github Username:</label>
+              <input type="text" id="github3" name="github3" />
+            </div>
+          </div>
+
+          <label for="team-question">Why do you think your team should participate in the hackathon?</label>
+          <textarea id="team-question" name="team-question" rows="4" cols="50" required></textarea>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+
+      <!-- in case youre woundering why i am wrapping the Quotes section in a figure, tbh idk myself but thats what i googled and found to be a good practice ^_^ -->
+      <figure class="quote-block">
+        <blockquote class="quote-text">
+          "The best way to predict the future is to build it. Join a community of innovators, creators, and problem-solvers at our hackathon.
+          Whether you're a seasoned developer or just starting out, this is your chance to turn ideas into reality and shape the future of technology"
+          <br>
+          - Hackathon Committee 2025
+        </blockquote>
+        <img src="../Images/coding-icon.png " alt="Coding Icon" class="quote-img" />
+      </figure>
+
+    </main>
+    <footer>
+      <div class="copyright">
+        <a href="index.html" class="footer-logo">Frontend Hackathon</a>
+        <p class="footer-text">© 2026 Frontend Hackathon. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="./pages/contact.html">Contact with us</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://discord.com" target="_blank">Discord</a>
+        <div class="legal-links">
+          <a href="./pages/privacy.html">Privacy Policy</a>
+          <a href="./pages/terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
