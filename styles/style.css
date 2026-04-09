@@ -72,18 +72,21 @@ Navigation Bar Styles
     display: flex;
     padding: 20px;
     align-items: center;
+    justify-content: space-between;
     background-color: #1F2937;
 }
 
-.navbar .nav-links {
+.nav-links {
     display: flex;
     margin-left: auto;
     list-style: none;
+    align-items: center;
 }
 
-.navbar .nav-logo {
-    color: #F9FAF8;
-    text-decoration: none;
+.navbar .nav-logo img {
+    width: 300px;
+    height: auto;
+    
 }
 
 .navbar .nav-links .nav-item {
@@ -96,7 +99,42 @@ Navigation Bar Styles
 }
 
 .navbar .nav-button {
-    margin-left: 10px;
+    margin: 0;
+}
+
+#menu-toggle, .hamburger {
+  display: none; /* Hide toggle tools on desktop */
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger icon */
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none; /* 1. HIDE MENU BY DEFAULT ON MOBILE */
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #1F2937;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav-links li {
+    padding: 10px 0;
+  }
+
+  /* 2. THE MAGIC: Show menu only when checkbox is checked */
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
 }
 
 /* ======================================================================================
@@ -117,10 +155,9 @@ Hero Section Styles
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-}
-
-.hero-content {
-    padding-right: 50px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-content h1 {
@@ -136,8 +173,24 @@ Hero Section Styles
 
 .hero-visual img {
     width: 600px;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px){
+    .hero-wrapper {
+        flex-direction: row;
+    }
+
+    .hero-content, .hero-visual img {
+        flex: 1;
+    }
+
+    .hero-content {
+        padding-right: 50px;
+    }
 }
 
 /* ======================================================================================
@@ -156,12 +209,19 @@ Features Section Styles
 
 .features-wrapper {
     display: flex;
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 50px auto;
 
 }
 
+.features-title {
+    margin: 20px;
+}
+
 .feature {
+    flex: 1 1 280px;
+    /* max-width: 400px; */
     padding: 30px;
     margin: 10px;
     border-radius: 20px;
@@ -244,10 +304,10 @@ Call to Action Section Styles
 .action-card {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #1F2937;
+    background-color: #3882F6;
     color: #F9FAF8;
     border-radius: 20px;
-    padding: 40px 20vw;
+    padding: 40px;
     text-align: center;
 }
 
@@ -260,8 +320,14 @@ Call to Action Section Styles
 .action-description {
     font-size: 18px;
     margin-bottom: 30px;
-    color: #b1b7c2;
+    color: #E5E7EB;
     line-height: 1.5;
+}
+
+@media (min-width: 768px){
+    .action-card {
+        padding: 40px 10vw;
+    }
 }
 
 
@@ -275,6 +341,7 @@ Footer Section Styles
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: #1F2937;
     color: #F9FAF8;
@@ -282,11 +349,9 @@ footer {
     text-align: center;
 }
 
-.footer-logo {
-    font-size: 24px;
-    font-weight: 900;
-    color: #F9FAF8;
-    text-decoration: none;
+.footer-logo img {
+    width: 300px;
+    height: auto;
     margin-bottom: 20px;
 }
 
@@ -305,14 +370,31 @@ footer {
     text-align: left;
 }
 
-.footer-links a {
-    color: #F9FAF8;
-    text-decoration: none;
+.copyright, .footer-links, .legal-links, .page-links {
+    flex: 1 1 300px;
     margin: 10px;
 }
 
+.footer-links, .legal-links, .page-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-links a, .legal-links a, .page-links a {
+    color: #F9FAF8;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 18px;
+}
+
+
+.social-links {
+    font-size: 36px;
+}
+
 .legal-links {
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 /* ======================================================================================
