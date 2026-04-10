@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up Form</title>
+    <title>Contact Us</title>
 
     <!-- Fontawsome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -35,6 +35,7 @@
     </header>
     <main>
 
+      <!-- Contact Hero Section Start -->
       <section class="contact-hero">
         <div class="contact-intro">
           <h1>Get In <em>Touch</em></h1>
@@ -46,6 +47,66 @@
           <p>HACKATHON_v2.0</p>
         </div>
       </section>
+      <!-- Contact Hero Section End -->
+
+      <!-- Contact Methods Section Start -->
+      <section class="contact-methods">
+        <div class="contact-card">
+          <h2>Contact with Us</h2>
+          <div class="phone-info">
+            <span><i class="fa-solid fa-phone"></i></span>
+            <div>
+              <p>Phone</p>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+          <div class="email-info">
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <div>
+              <p>Email</p>
+              <p>info@frontendhackathon.com</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <span><i class="fa-solid fa-globe"></i></span>
+            <div>
+              <p>SOCIAL</p>
+              <div class="social-icons">
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://discord.com" target="_blank"><i class="fa-brands fa-discord"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="" method="post">
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-group">
+              <label for="inquiry">Inquiry Type</label>
+              <select id="inquiry" name="inquiry" required>
+                <option value="">Select an option</option>
+                <option value="general">General Inquiry</option>
+                <option value="technical">Technical Support</option>
+                <option value="sponsorship">Sponsorship</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-full submit-button">Submit</button>
+          </form>
+        </div>
+      </section>
+      <!-- Contact Methods Section End -->
 
     </main>
     <!-- Footer Start -->
