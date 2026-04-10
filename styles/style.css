@@ -416,7 +416,7 @@ Footer Section Styles End
 }
 
 .Form-Area label {
-    font-size: 14px;
+    font-size: 16px;
     color: #E5E7EB;
     text-align: center;
 }
@@ -469,7 +469,7 @@ margin-bottom: 16px;
 }
 .Information-fill {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex: 1;
     gap: 15px;
     width: 100%;
@@ -479,7 +479,7 @@ margin-bottom: 16px;
     display: flex;
     flex-direction: column;
     flex: 1; 
-    gap: 5px;
+    margin-bottom: 20px;
 }
 
 .coding-icon {
