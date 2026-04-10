@@ -5,57 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HomePage</title>
 
-  <!-- Fontawsome link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- stylesheet link -->
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <!-- Header and Navigation Start -->
   <header>
     <nav class="navbar">
       <a class="nav-logo" href="index.html">
         <img src="./images/logo-2.png" alt="Frontend Hackathon Logo">
       </a>
 
-      <!-- THE TOGGLE: Keep input and label BEFORE the menu -->
       <input type="checkbox" id="menu-toggle">
-      
+
       <label for="menu-toggle" class="hamburger">
-        <i class="fas fa-bars"></i> <!-- FontAwesome Icon -->
-      </label>
+        <i class="fas fa-bars"></i> </label>
 
       <ul class="nav-links">
         <li class="nav-item"><a href="index.html">HOME</a></li>
-        <li class="nav-item"><a href="./Pages/Awards.html">AWARD</a></li>
+        <li class="nav-item"><a href="./pages/awards.html">AWARD</a></li>
         <li class="nav-item"><a href="./pages/schedule.html">SCHEDULE</a></li>
         <li class="nav-item"><a href="./pages/contact.html">CONTACT</a></li>
-        <li class="nav-item"><a href="./pages/signup.html"><button class="btn nav-button">SIGN UP</button></a></li>
+        <li class="nav-item">
+          <a href="./pages/signup.html">
+            <button class="btn nav-button">SIGN UP</button>
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
-  <!-- Header and Navigation End -->
   <main>
-    <!-- Hero Section Start -->
     <section class="hero">
       <div class="hero-wrapper">
         <div class="hero-content">
           <h1 class="hero-title">Welcome to the Frontend Hackathon!</h1>
-          <p class="hero-description">Code your ideas to life at the premier frontend event of the year. Join 500+ developers for 48 hours of intense creation, learning, and architectural innovation.</p>
+          <p class="hero-description">
+            Code your ideas to life at the premier frontend event of the year. 
+            Join 500+ developers for 48 hours of intense creation, learning, and architectural innovation.
+          </p>
           <div class="hero-button-container">
             <a href="./pages/signup.html"><button class="btn btn-lg">Sign up</button></a>
             <a href="./pages/schedule.html"><button class="btn btn-lg btn-secondary">Learn More</button></a>
           </div>
         </div>
         <figure class="hero-visual">
-          <img src="./images/hackathon-1.jpg" alt="This image shows a group of young adults focused on laptops and taking notes in a collaborative workshop or hackathon setting." />
+          <img src="./images/hackathon-1.jpg" alt="A group of young adults focused on laptops in a collaborative hackathon setting." />
         </figure>
       </div>
     </section>
-    <!-- Hero Section End -->
-    
-    <!-- Features Section Start -->
     <section class="features">
       <h1 class="features-title">Some random information</h1>
       <div class="features-wrapper">
@@ -64,16 +61,19 @@
           <h2 class="feature-title">Collaborate with Top Talent</h2>
           <p class="feature-description">Work alongside the best frontend developers, designers, and innovators from around the world. Build your network and create lasting connections.</p>
         </div>
+
         <div class="feature">
           <span class="feature-icon"><i class="fas fa-trophy"></i></span>
           <h2 class="feature-title">Win Amazing Prizes</h2>
           <p class="feature-description">Compete for a chance to win cash prizes, tech gadgets, mentorship opportunities, and more. Showcase your skills and get recognized on a global stage.</p>
         </div>
+
         <div class="feature">
           <span class="feature-icon"><i class="fas fa-graduation-cap"></i></span>
           <h2 class="feature-title">Learn from Industry Leaders</h2>
           <p class="feature-description">Attend workshops, panels, and talks led by industry experts. Gain insights into the latest frontend technologies, trends, and best practices.</p>
         </div>
+
         <div class="feature">
           <span class="feature-icon"><i class="fas fa-lightbulb"></i></span>
           <h2 class="feature-title">Expand Your Knowledge</h2>
@@ -81,21 +81,18 @@
         </div>
       </div>
     </section>
-    <!-- Features Section End -->
-
-    <!-- Testimonial Section Start -->
     <section class="testimonials">
       <figure class="testimonial">
         <blockquote cite="site_url">
           <span><i class="fa-solid fa-quote-left"></i></span>
-          <p>In the digital realm, we are the architects of perception. Every line of code is a stroke of paint on the canvas of reality. Focus on the craft, for the craft is the legacy.</p>
+          <p>
+            In the digital realm, we are the architects of perception. Every line of code is a stroke of paint on the canvas of reality. 
+            Focus on the craft, for the craft is the legacy.
+          </p>
         </blockquote>
         <figcaption>— Thor</figcaption>
       </figure>
     </section>
-    <!-- Testimonial Section End -->
-
-    <!-- Call to Action Section Start -->
     <section class="action">
       <div class="action-card">
         <h2 class="action-title">Ready to join the next generation of frontend engineers?</h2>
@@ -103,9 +100,8 @@
         <a href="./pages/signup.html"><button class="btn btn-lg btn-secondary">Sign up</button></a>
       </div>
     </section>
-    <!-- Call to Action Section End -->
-  </main>
-  <!-- Footer Start -->
+    </main>
+
   <footer>
     <div class="copyright">
       <a href="index.html" class="footer-logo">
@@ -113,12 +109,14 @@
       </a>
       <p class="footer-text">© 2026 Frontend Hackathon. All rights reserved.</p>
     </div>
+
     <div class="page-links">
       <a href="index.html">Home</a>
       <a href="./pages/award.html">Award</a>
       <a href="./pages/schedule.html">Schedule</a>
       <a href="./pages/signup.html">Sign Up</a>
     </div>
+
     <div class="footer-links">
       <a href="./pages/contact.html">Contact with us</a>
       <div class="social-links">
@@ -127,11 +125,11 @@
         <a href="https://discord.com" target="_blank"><i class="fa-brands fa-discord"></i></a>
       </div>
     </div>
+
     <div class="legal-links">
       <a href="./pages/privacy.html">Privacy Policy</a>
       <a href="./pages/terms.html">Terms of Service</a>
     </div>
   </footer>
-  <!-- Footer End -->
-</body>
+  </body>
 </html>

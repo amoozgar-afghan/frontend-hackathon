@@ -1,0 +1,146 @@
+/*
+    signup.css — styles for signup.html only.
+    Includes: Join banner, form container, form inputs, quote block.
+    Requires: style.css
+*/
+
+/* ======================================================================================
+Join Banner
+========================================================================================= */
+
+.Join {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 40px 40px;
+    text-align: center;
+}
+
+.Join h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.Join h3 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #E5E7EB;
+    margin-bottom: 16px;
+}
+
+/* ======================================================================================
+Join Banner End
+========================================================================================= */
+
+/* ======================================================================================
+Form Styles
+========================================================================================= */
+
+.form-container {
+    background-color: #1F2937;
+    padding: 50px 20px;
+}
+
+.Form-Area {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #F9FAF8;
+}
+
+.Form-Area label {
+    font-size: 16px;
+    color: #E5E7EB;
+    text-align: center;
+}
+
+.Form-Area input, .Form-Area textarea {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #3882F6;
+    background-color: #2D3748;
+    color: #F9FAF8;
+    font-family: 'Roboto', 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+/* Team members columns — mobile first */
+.Information-fill {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+/* Tablet: 2 columns, third wraps below */
+@media (min-width: 600px) {
+    .Information-fill {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .Information-fill .input-group {
+        flex: 1 1 calc(50% - 15px);
+    }
+}
+
+/* Desktop: 3 columns side by side */
+@media (min-width: 900px) {
+    .Information-fill {
+        flex-wrap: nowrap;
+    }
+
+    .Information-fill .input-group {
+        flex: 1;
+    }
+}
+
+/* ======================================================================================
+Form Styles End
+========================================================================================= */
+
+/* ======================================================================================
+Quote Block
+========================================================================================= */
+
+.quote-block {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 60px 80px;
+}
+
+.quote-text {
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+    line-height: 1.6;
+    /* dont add justify, it looks kinda weird on small screens */
+}
+
+.quote-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    flex-shrink: 0; /* leave this at 0 so the text wraps down (❁´◡`❁) */
+}
+
+.coding-icon {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+/* ======================================================================================
+Quote Block End
+========================================================================================= */

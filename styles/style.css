@@ -59,7 +59,7 @@ Fonts End
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
     background-color: #F9FAF8;
     color: #1F2937;
 }
@@ -460,99 +460,6 @@ Contact Hero Section Styles
 Contact Hero Section Styles End
 ========================================================================================= */
 
-.Form-Area {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 800px;
-    margin: 20px auto;
-    color: #F9FAF8;
-}
-
-.form-container {
- background-color: #1F2937;
- padding: 50px 20px;
-}
-
-.Form-Area label {
-    font-size: 14px;
-    color: #E5E7EB;
-    text-align: center;
-}
-
-.Form-Area input, .Form-Area textarea {
-    padding: 10px 14px;
-    border-radius: 8px;
-    border: 1px solid #3882F6;
-    background-color: #2D3748;
-    color: #F9FAF8;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-}
-.Join {
-    background-color: #1F2937;
-    color: #F9FAF8;
-    padding: 40px 40px;
-    text-align: center;
-}
-
-.Join h1 {
-font-size: 48px;
-font-weight: 800;
- margin-bottom: 16px;
-
-}
-
-.Join h3 {
-font-size: 18px;
-font-weight: 300;
-color: #E5E7EB;
-margin-bottom: 16px;
-}
-
-
-.quote-text {
-   font-size: 24px;
-    font-weight: 300;
-    font-style: italic;
-    color: #1F2937;
-    line-height: 1.6;
-    
-   /*  dont add justify, it looks kinda weird on small screans*/
-}
-.quote-img {
-  width: 150px;       
-  height: 150px;
-  object-fit: contain;
-  flex-shrink: 0; /*  leave this at 0 so the text wraps down (❁´◡`❁)*/
-}
-.Information-fill {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    gap: 15px;
-    width: 100%;
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    flex: 1; 
-    gap: 5px;
-}
-
-.coding-icon {
-    width: 100px;
-    height: 100px;
-    margin: 20px auto;
-}
-
-.quote-block {
-    display:flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 60px 80px;
-}
 /* ======================================================================================
 Utility Classes
 ========================================================================================= */
@@ -585,8 +492,4 @@ Utility Classes
 
 /* ======================================================================================
 Utility Classes End
-========================================================================================= */
-
-/* ======================================================================================
-Awards Page
 ========================================================================================= */
