@@ -545,13 +545,27 @@ Awards Page
     justify-content: center;
 }
 .prize-card {
-    background-color: #2D3748; 
-    padding: 30px;
+    background-color: #2D3748;
+    padding: 45px 40px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1 1 calc(33.333% - 20px); 
+    flex: 1 1 calc(33.333% - 20px);
+    min-height: 260px;
+}
+
+.prize-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.prize-card p {
+    font-size: 15px;
+    color: #b1b7c2;
+    line-height: 1.6;
+    margin-bottom: 24px;
 }
 
 .grand-champion {
@@ -560,6 +574,12 @@ Awards Page
 
 .best-ui {
     flex: 1 1 calc(30% - 20px);
+}
+.small-quote {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .quote-section {
@@ -570,6 +590,13 @@ Awards Page
     align-items: center;
     color: #1F2937;
 }
+.quote-section figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 720px;
+}
+
 .quote-section blockquote {
     font-size: 24px;
     font-weight: 300;
@@ -586,21 +613,25 @@ Awards Page
     text-transform: uppercase;
     margin-top: 48px;
     margin-bottom: 18px;
+    margin-left: 23px;
 }
 .project {
     display: flex;
-    align-items: center;
-    gap: 50px;
+    align-items: flex-start; 
+    gap: 40px;
     margin-bottom: 80px;
-    padding: 25px 25px;
+    padding: 25px;
+    flex-wrap: wrap;  /* This line makes it responsive   */
 }
 .project-image img {
-    width: 80%;
+    width: 100%; 
     border-radius: 4px;
+    display: block;
 }
 
 .project-image, .Project-text {
-    flex: 1;
+    flex: 1 1 300px;          
+    min-width: 0; /* This prevents the overflowing i think  */
 }
 
 .Project-text p {
@@ -630,4 +661,55 @@ Awards Page
     font-size: 12px;
     border-radius: 4px;
     color: #b1b7c2;
+}
+
+.Awards-hero {
+    padding: 80px 60px;
+    background-color: #15191f;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    min-height: 280px;
+    border: 1px solid #2a2f5e;
+    flex-wrap: wrap;
+}
+
+.Awards-hero h1 {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.Awards-hero p {
+    font-size: 16px;
+    color: #b1b7c2;
+    line-height: 1.7;
+    border-left: 2px solid #4a4f8a;
+    padding-left: 30px;
+    max-width: 340px;
+}
+.call-to-action {
+    padding: 80px 20px;
+    text-align: center;
+    color: #F9FAF8;
+}
+
+.call-to-action h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.call-to-action h2 span {
+    color: #3882F6;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
