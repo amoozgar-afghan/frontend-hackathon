@@ -18,6 +18,8 @@ Awards Hero
     min-height: 280px;
     border: 1px solid #2a2f5e;
     flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
 }
 
 .Awards-hero h1 {
@@ -72,13 +74,20 @@ Upcoming Prizes Section
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 14px;
+    text-align: center;
 }
 
+.prize-icon {
+  display: block;
+  margin: 0 auto 15px auto; 
+  font-size: 2rem;    
+}
 .prize-card p {
     font-size: 15px;
     color: #b1b7c2;
     line-height: 1.6;
     margin-bottom: 24px;
+    text-align: center;
 }
 
 .grand-champion {
@@ -90,11 +99,20 @@ Upcoming Prizes Section
 }
 
 .small-quote {
-    font-size: 18px;
+    font-size: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-style: italic;
+    font-style: oblique;
 }
+
+.grand-champion,.small-quote {
+    background: linear-gradient(135deg, #2D3748 0%, #0a1c4b 50%, #222f42 100%);
+    border: 1px solid #3b82f6; /* Optional: adds a subtle border to make it pop */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
 
 /* ======================================================================================
 Upcoming Prizes Section End
@@ -149,8 +167,8 @@ Hall of Fame
 
 .project {
     display: flex;
-    align-items: flex-start;
-    gap: 40px;
+    align-items: center;
+    gap: 30px;
     margin-bottom: 80px;
     padding: 25px;
     flex-wrap: wrap;
@@ -158,12 +176,12 @@ Hall of Fame
 
 .project-image img {
     width: 100%;
-    border-radius: 4px;
+    border-radius: 20px;
     display: block;
 }
 
 .project-image, .Project-text {
-    flex: 1 1 300px;
+    flex: 1;
     min-width: 0;
 }
 
@@ -192,11 +210,30 @@ Hall of Fame
 }
 
 .project-tags span {
-    border: 1px solid #34445a;
     padding: 5px 12px;
-    font-size: 12px;
+    font-size: 17px;
     border-radius: 4px;
     color: #b1b7c2;
+    background: linear-gradient(135deg, #2D3748 0%, #0a1c4b 50%, #222f42 100%);
+    border: 1px solid #3b82f6; /* Optional: adds a subtle border to make it pop */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .project.second {
+        flex-direction: column-reverse; 
+    }
+
+    .project-image, 
+    .Project-text {
+        flex: 1 1 100%; 
+    }
 }
 
 /* ======================================================================================

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awards</title>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./../styles/style.css" />
   <link rel="stylesheet" href="./../styles/awards.css" />
@@ -36,45 +37,46 @@
 
   <main style="background-color: #1F2937; color: aliceblue;">
     <section class="Awards-hero">
-      <h1>Legacy & Glory</h1>
+      <h1>Legacy &<br> Glory.</h1>
       <p>
         We celebrate the technical excellence and visionary interfaces of the world's
         most talented frontend engineers.
       </p>
     </section>
 
-    <section class="upcoming-prizes-section">
+    <section class="upcoming-prizes-section" aria-labelledby="prizes-title">
       <div class="upcoming-prizes-header">
-        <h2>Upcoming Prizes</h2>
-        <span>[ 2024 Edition ]</span>
+        <h2 id="prizes-title">Upcoming Prizes</h2>
+        <p><time datetime="2024">2024 Edition</time></p>
       </div>
 
       <div class="prizes-container">
         <div class="grand-champion prize-card">
+          <span class="prize-icon" aria-hidden="true"><i class="fa-solid fa-award"></i></span>
           <h3>Grand Champion</h3>
           <p>The ultimate prize for the most innovative, performant, and visually stunning application of the season.</p>
-          <strong>$10,000</strong>
+          <strong><data value="10000">$10,000</data></strong>
         </div>
 
         <div class="best-ui prize-card">
-          <span class="prize-icon">✏️</span>
+          <span class="prize-icon" aria-hidden="true"><i class="fa-solid fa-paintbrush"></i></span>
           <h3>Best UI/UX</h3>
           <p>Pixel-perfect precision and fluid motion design.</p>
-          <strong>$2,500</strong>
+          <strong><data value="2500">$2,500</data></strong>
         </div>
 
         <div class="performance prize-card">
-          <span class="prize-icon">⚡</span>
+          <span class="prize-icon" aria-hidden="true"><i class="fa-solid fa-bolt"></i></span>
           <h3>Performance</h3>
           <p>Sub-second load times and optimized runtime logic.</p>
-          <strong>$2,500</strong>
+          <strong><data value="2500">$2,500</data></strong>
         </div>
 
         <div class="clean-arch prize-card">
-          <span class="prize-icon">🧩</span>
+          <span class="prize-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
           <h3>Clean Architecture</h3>
           <p>Scalability, documentation, and flawless DX.</p>
-          <strong>$2,500</strong>
+          <strong><data value="2500">$2,500</data></strong>
         </div>
 
         <div class="small-quote prize-card">
@@ -102,10 +104,12 @@
         </div>
         <div class="Project-text">
           <span class="project-year">2025 WINNER</span>
-          <h3>AttendAI</h3>
+          <h3>AttendAI: Redefining Campus Presence</h3>
           <p>
-            An AI-powered university attendance system that uses real-time facial recognition to automatically track student presence the moment they walk into a lecture hall.
-            Professors get a live dashboard with attendance rates, weekly trends, and automatic alerts for at-risk students — no roll calls, no manual registers.
+           AttendAI is a cutting-edge, AI-powered university attendance system designed to eliminate the friction of manual registers. By utilizing real-time facial recognition, the system automatically tracks student presence the moment they enter a lecture hall. 
+          </p>
+          <p>
+            Beyond simple tracking, professors are provided with a live dashboard featuring deep-dive analytics on attendance rates, weekly engagement trends, and automatic "at-risk" alerts for students falling behind. This project stood out for its seamless integration of complex computer vision with a highly intuitive administrative interface.
           </p>
           <div class="project-tags">
             <span>VUE.JS</span>
@@ -118,10 +122,12 @@
       <div class="project second">
         <div class="Project-text">
           <span class="project-year">2024 WINNER</span>
-          <h3>BuildScope</h3>
+          <h3>BuildScope: Precision Estimating</h3>
           <p>
-            An AI-driven web project estimator that analyzes your requirements and instantly generates accurate cost breakdowns and development timelines. Detects scope creep risks, flags third-party integration complexity,
-            and gives you a confidence score — so clients and developers are aligned before a single line of code is written.
+            BuildScope revolutionized the pre-development phase with its AI-driven web project estimator. By analyzing complex project requirements, it instantly generates highly accurate cost breakdowns and realistic development timelines that factor in historical data.
+          </p>
+          <p>
+            The platform's standout feature is its "Scope-Creep Detector," which flags potential third-party integration complexities and provides a confidence score. This ensures that both clients and developers are fully aligned and aware of technical risks before a single line of production code is written. It is the ultimate tool for transparent project planning.
           </p>
           <div class="project-tags">
             <span>VUE.JS</span>
