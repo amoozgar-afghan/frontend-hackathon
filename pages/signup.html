@@ -37,18 +37,24 @@
   </header>
 
   <main>
-    <div class="Join">
+    <section class="Join">
       <h1>Join The Hackathon Now!</h1>
       <h3>Assemble your team, push your limits, and build the future of the web in 48 hours.</h3>
-    </div>
+    </section>
 
-    <div class="form-container">
+    <section class="flow-banner-container">
+      <div class="flow-banner-overlay">
+        <img src="./../images/hacathon-steps.png" alt="Hackathon Journey: Registration then Challenge then Build then and finally annoucing Winners" class="flow-banner-img" />
+      </div>
+    </section>
+
+    <section class="form-container">
       <form action="/submit" method="post" class="Form-Area">
-        <label for="team">Team name:</label>
+        <label for="team" style="text-align: center;">Team name:</label>
         <input type="text" id="team" name="team" required />
 
         <div class="Information-fill">
-          <div class="input-group">
+          <fieldset class="input-group">
             <label for="first-name">First Team Member Name:</label>
             <input type="text" id="first-name" name="first-name" required />
 
@@ -57,9 +63,9 @@
 
             <label for="github">First Team Member Github Username:</label>
             <input type="text" id="github" name="github" required />
-          </div>
+          </fieldset>
 
-          <div class="input-group">
+          <fieldset class="input-group">
             <label for="second-name">Second Team Member Name:</label>
             <input type="text" id="second-name" name="second-name" />
 
@@ -68,9 +74,9 @@
 
             <label for="github2">Second Team Member Github Username:</label>
             <input type="text" id="github2" name="github2" />
-          </div>
+          </fieldset>
 
-          <div class="input-group">
+          <fieldset class="input-group">
             <label for="third-name">Third Team Member Name:</label>
             <input type="text" id="third-name" name="third-name" />
 
@@ -79,7 +85,7 @@
 
             <label for="github3">Third Team Member Github Username:</label>
             <input type="text" id="github3" name="github3" />
-          </div>
+          </fieldset>
         </div>
 
         <label for="team-question">Why do you think your team should participate in the hackathon?</label>
@@ -87,17 +93,17 @@
 
         <button type="submit" class="btn">Submit</button>
       </form>
-    </div>
+    </section>
 
     <figure class="quote-block">
       <blockquote class="quote-text">
         "The best way to predict the future is to build it. Join a community of innovators, creators, and problem-solvers at our hackathon.
         Whether you're a seasoned developer or just starting out, this is your chance to turn ideas into reality and shape the future of technology"
-        <br>
-        - Hackathon Committee 2025
-      </blockquote>
-      <img src="../Images/coding-icon.png" alt="Coding Icon" class="quote-img" />
+        </blockquote>
+      <figcaption>- Hackathon Committee <time datetime="2025">2025</time></figcaption>
+      <img src="./../images/coding-icon.png" alt="Coding Icon" class="quote-img" />
     </figure>
+
   </main>
 
   <footer>

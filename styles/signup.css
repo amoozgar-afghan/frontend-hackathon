@@ -51,26 +51,38 @@ Form Styles
 }
 
 .Form-Area label {
-    font-size: 16px;
-    color: #E5E7EB;
-    text-align: center;
+    display: block;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #9CA3AF;
+    margin-bottom: 8px;
+    margin-top: 10px;
 }
 
-.Form-Area input, .Form-Area textarea {
-    padding: 10px 14px;
+.Form-Area input[type="text"],
+.Form-Area input[type="email"],
+.Form-Area textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #2D3748; /* Slightly lighter than the background */
+    border: 2px solid #374151;
     border-radius: 8px;
-    border: 1px solid #3882F6;
-    background-color: #2D3748;
     color: #F9FAF8;
-    font-family: 'Roboto', 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    outline: none;
 }
+
+
 
 /* Team members columns — mobile first */
 .Information-fill {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 20px;
     width: 100%;
 }
 
@@ -79,6 +91,7 @@ Form Styles
     flex-direction: column;
     flex: 1;
     margin-bottom: 20px;
+    border: none;
 }
 
 /* Tablet: 2 columns, third wraps below */
@@ -114,9 +127,11 @@ Quote Block
 
 .quote-block {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    padding: 60px 80px;
+    text-align: center;
+    gap: 20px;
+    padding: 40px 20px;
 }
 
 .quote-text {
@@ -125,13 +140,13 @@ Quote Block
     font-style: italic;
     color: #1F2937;
     line-height: 1.6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     /* dont add justify, it looks kinda weird on small screens */
 }
 
 .quote-img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
+    width: 120px;
+    height: auto;
     flex-shrink: 0; /* leave this at 0 so the text wraps down (❁´◡`❁) */
 }
 
@@ -144,3 +159,20 @@ Quote Block
 /* ======================================================================================
 Quote Block End
 ========================================================================================= */
+.flow-banner-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color:  #1F2937;
+}
+
+.flow-banner-img {
+    display: block;
+    width: 100%;
+    max-width: 900px;        
+    aspect-ratio: 13 / 5;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 7px;
+}
