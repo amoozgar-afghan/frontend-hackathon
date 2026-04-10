@@ -580,3 +580,35 @@ Awards Page
     text-align: center;
     padding-bottom: 30px;
 }   
+
+.hall-of-fame h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 48px;
+    margin-bottom: 18px;
+}
+.project {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+.project-image img {
+    width: 100%;
+    border-radius: 4px;
+    filter: grayscale(20%); /* Optional: Matches the moody vibe of the image */
+}
+
+.project-image, .Project-text {
+    flex: 1;
+}
+
+.Project-text p {
+    color: #b1b7c2;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.Project-text h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
