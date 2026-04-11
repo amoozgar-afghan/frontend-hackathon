@@ -102,7 +102,27 @@ Navigation Bar Styles
     width: 300px;
     height: auto;
     
+}.navbar .nav-links a {
+    color: #c7cbd4;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 7px 16px;
+    border-radius: 50px;
+    transition: background-color 0.2s, color 0.2s;
 }
+ 
+.navbar .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #F9FAF8;
+}
+ 
+/* Active page link */
+.navbar .nav-links a.active {
+    background-color: #3882F6;
+    color: #F9FAF8;
+}
+
 
 .navbar .nav-links .nav-item {
     margin: 0 10px;
