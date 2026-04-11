@@ -94,7 +94,6 @@ Navigation Bar Styles
 
 .nav-links {
     display: flex;
-    margin-left: auto;
     list-style: none;
     align-items: center;
 }
