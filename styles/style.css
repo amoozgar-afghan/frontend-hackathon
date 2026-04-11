@@ -62,11 +62,15 @@ body {
     font-family: 'Roboto', 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
     background-color: #F9FAF8;
     color: #1F2937;
+    line-height: 1.6;
 }
 
 h1 {
    font-size: 48px;
    font-weight: 900;
+   line-height: 1; 
+   text-transform: uppercase; 
+   flex: 1; 
    margin-bottom: 20px;
 }
 
@@ -576,6 +580,51 @@ Contact Methods Section Styles
 
 /* ======================================================================================
 Contact Methods Section Styles End
+========================================================================================= */
+
+/* ======================================================================================
+Schedule Hero Section Styles
+========================================================================================= */
+
+.section-light {
+    background-color: var(--bg-light);
+    padding: 5rem 2rem; /* Added padding for smaller screens */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.hero-desc { 
+    flex: 0 1 400px; 
+    color: #6b7280; 
+    font-size: 18px; 
+}
+
+@media (max-width: 992px) {
+    .hero-flex {
+        flex-direction: column;
+    }
+
+    .hero-desc {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-light { 
+        padding: 3rem 20px; 
+    }
+}
+
+/* ======================================================================================
+Schedule Hero Section Styles End
 ========================================================================================= */
 
 /* ======================================================================================
