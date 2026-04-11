@@ -1,0 +1,169 @@
+/* ======================================================================================
+Contact Hero Section Styles
+========================================================================================= */
+
+.contact-hero {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 20px;
+    margin: 0 auto;
+}
+
+.contact-intro{
+    flex: 1 1 400px;
+    max-width: 65ch;
+}
+
+.contact-intro em {
+    font-style: italic;
+    font-weight: 900;
+    color: #3882F6;
+}
+
+.contact-intro p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.intro-card {
+    padding: 40px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    flex: 0 1 200px;
+    text-align: right;
+    align-self: flex-end;
+    margin-top: 40px;
+}
+
+.intro-card i {
+    font-size: 36px;
+    color: #3882F6;
+    margin-bottom: 20px;
+}
+
+/* ======================================================================================
+Contact Hero Section Styles End
+========================================================================================= */
+
+/* ======================================================================================
+Contact Methods Section Styles
+========================================================================================= */
+
+.contact-methods {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: stretch;
+    width: 100%;
+}
+
+.contact-card, .contact-form {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    border-radius: 10px;
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 20px; */
+}
+
+.contact-card:hover, .contact-form:hover {
+    background-color: #232d3b;
+}
+
+.phone-info, .email-info, .social-links {
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px; */
+}
+
+.email-info {
+    overflow-wrap: break-word; 
+    word-break: break-all; 
+}
+
+.contact-card span {
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 10px;
+    background-color: #34445a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+    color: #3882F6;
+    align-self: flex-start;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.contact-card p:first-child, .contact-form label {
+    font-size: 16px;
+    font-weight: 300;
+    color: #b1b7c2;
+    margin-bottom: 5px;
+}
+
+.contact-card p:last-child {
+    font-size: 24px;
+    font-weight: 700;
+    color: #F9FAF8;
+    
+}
+
+.social-icons a {
+    font-size: 36px;
+    color: #F9FAF8;
+    margin-right: 10px;
+}
+
+.contact-form .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contact-form input, .contact-form textarea, .contact-form select {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #34445a;
+    color: #F9FAF8;
+}
+
+
+@media (min-width: 512px){
+    .contact-card, .contact-form {
+        min-width: 300px;
+        padding: 40px;
+    }
+}
+
+@media (min-width: 768px){
+    
+
+    .phone-info, .email-info, .social-links {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+    }
+
+    .contact-card span {
+        margin: 0;
+        margin-right: 20px;
+    }
+}
+
+/* ======================================================================================
+Contact Methods Section Styles End
+========================================================================================= */
