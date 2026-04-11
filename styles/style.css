@@ -355,6 +355,12 @@ Call to Action Section Styles End
 Footer Section Styles
 ========================================================================================= */
 
+.footer-divider {
+    border: none;
+    border-top: 1px solid #b2b8c5;
+    margin: 0 20px;
+}
+
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -372,13 +378,13 @@ footer {
 }
 
 .footer-text {
-    font-size: 14px;
+    font-size: 16px;
     color: #E5E7EB;
     margin-top: 10px;
 }
 
 .footer-text, .footer-links a, .legal-links a {
-    color: #b1b7c2;
+    color: #c5c9d1;
     line-height: 1.5;
 }
 
@@ -601,22 +607,31 @@ Schedule Hero Section Styles
 
 .hero-desc { 
     flex: 0 1 400px; 
-    color: #6b7280; 
+    color: #c7cbd4; 
     font-size: 18px; 
 }
 
 @media (max-width: 992px) {
-    .hero-flex, .arena-flex {
+    .hero-flex, .arena-flex, .schedule-row, .faq-flex {
         flex-direction: column;
     }
 
-    .hero-desc {
+    .hero-desc, .day-label, .faq-column {
         flex: none;
         width: 100%;
+    }
+
+    .location-box { 
+        min-height: 200px;
     }
 }
 
 @media (max-width: 600px) {
+    
+    blockquote { 
+        font-size: 1.8rem !important; 
+    }
+
     .section-light, .section-dark { 
         padding: 3rem 20px; 
     }
@@ -736,6 +751,93 @@ Arena Section Styles
 Arena Section Styles End
 ========================================================================================= */
 
+
+/* --- Schedule --- */
+.schedule-row {
+    display: flex;
+    padding: 4rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    gap: 2rem;
+}
+
+.schedule-title {
+    padding-bottom: 1rem; 
+    border-bottom: 2px solid #F9FAF8; 
+    margin-bottom: 1rem;
+}
+
+blockquote {
+    font-size: 2.5rem; 
+    font-style: italic; 
+    max-width: 800px; 
+    margin: 0 auto 2rem;
+}
+
+.blockquote-author {
+    font-weight: 800; 
+    opacity: 0.5; 
+    letter-spacing: 2px;
+}
+
+.blockquote-icon {
+    opacity: 0.2; 
+    margin-bottom: 2rem;
+}
+
+.day-label { 
+    flex: 0 0 300px; 
+}
+
+.day-label h3 { 
+    font-size: 2rem; 
+}
+
+.events-list { 
+    flex: 1; 
+}
+
+.event-item { 
+    margin-bottom: 2.5rem; 
+}
+
+.event-time { 
+    font-weight: 700;
+    color: #3882F6; 
+    font-size: 0.9rem; 
+}
+
+.event-title { 
+    font-size: 1.3rem; 
+    font-weight: 700; 
+    margin: 0.3rem 0; 
+}
+
+/* --- Briefing --- */
+
+.faq-title {
+    font-size: 2rem; 
+    margin-bottom: 3rem;
+}
+
+.faq-flex {
+    display: flex;
+    gap: 5rem;
+    padding: 2rem 0;
+}
+
+.faq-column { 
+    flex: 1; 
+}
+
+.faq-item h4 { 
+    font-size: 1.2rem; 
+    margin-bottom: 1rem; 
+}
+
+.faq-item p { 
+    color: #c8cbd3; 
+    margin-bottom: 3rem; 
+}
 
 /* ======================================================================================
 Utility Classes
